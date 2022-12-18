@@ -20,7 +20,11 @@ requirements:
     - pip
   run:
     - python >=3.7
+    - distro
+    - importlib-metadata
+    - packaging
     - requests
+    - requests-toolbelt
 
 test:
   imports:
