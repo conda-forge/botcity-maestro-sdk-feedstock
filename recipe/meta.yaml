@@ -1,5 +1,5 @@
 {% set name = "botcity-maestro-sdk" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2dfd89738296b87b1185b946282ca4805c68cf89ee817a785d8e068fe4699ae0
+  sha256: bcf0176494cd4558444680aeb1b83a5d59891d0668b08dbf5aaf86cbf8bf5366
 
 build:
   noarch: python
