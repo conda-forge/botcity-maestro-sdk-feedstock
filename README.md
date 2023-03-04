@@ -1,11 +1,11 @@
-About botcity-maestro-sdk
-=========================
+About botcity-maestro-sdk-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/botcity-maestro-sdk-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/botcity-dev/botcity-maestro-sdk-python
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/botcity-maestro-sdk-feedstock/blob/main/LICENSE.txt)
 
 Summary: BotCity Maestro SDK - Python
 
