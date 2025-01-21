@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 8ecc23a73230cf0f80e4a1b7469285434600fdd7078b0e524710c5c82c67c32c
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - distro
     - importlib-metadata
     - packaging
@@ -27,6 +27,8 @@ requirements:
     - requests-toolbelt
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - botcity.maestro
 
