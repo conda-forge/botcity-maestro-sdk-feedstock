@@ -1,17 +1,17 @@
 {% set name = "botcity-maestro-sdk" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8ecc23a73230cf0f80e4a1b7469285434600fdd7078b0e524710c5c82c67c32c
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: aa4860cab5ba508d97ce83a34638bd1f0096faeb63b5806b8a7a451285e95876
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
